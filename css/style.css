@@ -1,0 +1,341 @@
+:root {
+  --brand-teal: #a66f4e;
+  --brand-navy: #3a2a22;
+  --brand-rust: #c8a18c;
+  --brand-orange: #9d4f24;
+  --brand-green: #7d9462;
+  --ink: #2a211c;
+  --soft: #f6efe6;
+  --cream: #fffaf3;
+  --coffee: #4c3429;
+}
+
+body {
+  color: var(--ink);
+  font-family: "Noto Sans TC", "Microsoft JhengHei", system-ui, -apple-system, sans-serif;
+  background: var(--cream);
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-header {
+  background: rgba(255, 250, 243, .97);
+  box-shadow: 0 2px 14px rgba(76, 52, 41, .12);
+  z-index: 1030;
+}
+
+.utility-links a {
+  color: var(--brand-navy);
+  font-size: .85rem;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+.navbar-brand {
+  color: var(--brand-teal);
+  font-size: clamp(1.8rem, 4vw, 3.25rem);
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.navbar-nav .nav-link {
+  color: var(--brand-navy);
+  font-size: 1.35rem;
+  font-weight: 800;
+  padding-inline: 1rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--brand-orange);
+}
+
+.hero-carousel .carousel-item {
+  min-height: 330px;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-carousel .carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(50, 32, 24, .72), rgba(50, 32, 24, .22));
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+  min-height: 330px;
+  color: #fff;
+  display: flex;
+  align-items: end;
+  padding-bottom: 2.4rem;
+}
+
+.hero-copy h1 {
+  font-size: clamp(1.75rem, 4vw, 3.9rem);
+  font-weight: 900;
+  margin-bottom: .65rem;
+}
+
+.hero-copy p {
+  font-size: clamp(1rem, 2vw, 1.45rem);
+  font-weight: 700;
+  margin: 0;
+  max-width: 680px;
+}
+
+.section-band {
+  padding: 4.5rem 0;
+}
+
+.section-rust {
+  background: var(--brand-rust);
+}
+
+.section-soft {
+  background: var(--soft);
+  box-shadow: 0 2px 16px rgba(20, 20, 20, .14);
+}
+
+.section-title {
+  color: var(--coffee);
+  font-size: clamp(2rem, 5vw, 3.3rem);
+  font-weight: 900;
+  margin-bottom: 1.7rem;
+}
+
+.section-rust .section-title {
+  color: #2d211b;
+}
+
+.entry-card {
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(76, 52, 41, .2);
+  border-radius: 8px;
+  background: #fffdf8;
+  box-shadow: 0 8px 20px rgba(76, 52, 41, .1);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.entry-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(76, 52, 41, .18);
+}
+
+.entry-media {
+  min-height: 150px;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.entry-body {
+  padding: 1.25rem 1rem;
+}
+
+.entry-body h3 {
+  color: var(--brand-orange);
+  font-size: 1.45rem;
+  font-weight: 900;
+  margin-bottom: .45rem;
+}
+
+.entry-body p {
+  color: #4b3a31;
+  font-size: .95rem;
+  line-height: 1.65;
+  margin-bottom: .9rem;
+}
+
+.btn-read {
+  --bs-btn-bg: var(--brand-green);
+  --bs-btn-border-color: var(--brand-green);
+  --bs-btn-hover-bg: #6a8050;
+  --bs-btn-hover-border-color: #6a8050;
+  --bs-btn-color: #17220f;
+  --bs-btn-hover-color: #fffdf8;
+  border-radius: 0;
+  font-weight: 900;
+  min-width: 132px;
+}
+
+.service-panel {
+  align-items: stretch;
+}
+
+.store-photo,
+.map-card {
+  width: 100%;
+  min-height: 260px;
+  border: 1px solid rgba(76, 52, 41, .2);
+  border-radius: 4px;
+}
+
+.store-photo {
+  background-image: url("../images/coffee-cups-arrangement-0410-5710928.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.map-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: end;
+  background-image: linear-gradient(180deg, rgba(45, 33, 27, .12), rgba(45, 33, 27, .72)), url("../images/Gemini_Generated_Image_o4tlvto4tlvto4tl.png");
+  background-position: center;
+  background-size: cover;
+  color: #fffdf8;
+  padding: 1.5rem;
+}
+
+.map-card h3 {
+  font-weight: 900;
+  margin-bottom: .5rem;
+}
+
+.map-card p {
+  font-weight: 700;
+  line-height: 1.7;
+  margin-bottom: 0;
+  max-width: 560px;
+}
+
+.service-copy {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-copy h3 {
+  color: var(--brand-orange);
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.service-list {
+  display: grid;
+  gap: .75rem;
+  color: #4b3a31;
+  font-weight: 700;
+}
+
+.icon-img {
+  width: 1.25rem;
+  height: 1.25rem;
+  object-fit: contain;
+  flex: 0 0 1.25rem;
+}
+
+.site-footer {
+  background: #d2ad92;
+  padding: 5rem 0 3rem;
+  color: #2d211b;
+  font-weight: 800;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+  margin-bottom: 2.2rem;
+}
+
+.social-links a {
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #2d211b;
+}
+
+.social-links img,
+.youtube-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer-contact {
+  display: grid;
+  gap: .6rem;
+  justify-content: center;
+  margin-bottom: 2.6rem;
+}
+
+.footer-contact span {
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+}
+
+.youtube-link {
+  color: #2d211b;
+  width: 58px;
+  height: 58px;
+  display: inline-flex;
+  margin-bottom: 3rem;
+}
+
+.back-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--coffee);
+  color: #fff;
+  z-index: 1020;
+  box-shadow: 0 8px 20px rgba(76, 52, 41, .28);
+}
+
+.back-top:hover {
+  color: #fff;
+  background: var(--brand-orange);
+}
+
+.back-top img {
+  width: 1.85rem;
+  height: 1.85rem;
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 991.98px) {
+  .utility-links {
+    justify-content: center;
+  }
+
+  .navbar-brand {
+    font-size: 2rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+  }
+
+  .section-band {
+    padding: 3.25rem 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .entry-media {
+    min-height: 190px;
+  }
+
+  .hero-carousel .carousel-item,
+  .hero-copy {
+    min-height: 390px;
+  }
+}
