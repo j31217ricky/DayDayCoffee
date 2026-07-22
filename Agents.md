@@ -28,3 +28,6 @@
 2. 修改視覺樣式時，優先編輯 `css/style.css`。
 3. 新增圖片放入 `images/`，新增圖示放入 `ICON/`。
 4. 修改後用瀏覽器直接開啟 `index.html` 檢查桌機與手機版顯示。
+
+## 外部連結網址
+// https://j31217ricky.github.io/DayDayCoffee/
